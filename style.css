@@ -1,0 +1,141 @@
+/* Mobile First Approach */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --black: #121212;
+  --white: #ffffff;
+  --orange: #ff7500;
+}
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 0.8rem;
+  color: var(--white);
+}
+img {
+  width: 100%;
+}
+.container {
+  background-color: var(--black);
+}
+.nav-container {
+  padding: 3.68% 10.4%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fa-bars {
+  color: var(--white);
+}
+.login-btn {
+  border: 2px solid var(--white);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 1.2% 3.6%;
+  font-weight: 600;
+}
+.navigation-menu {
+  display: none;
+}
+.navigation-menu > div {
+  font-weight: 500;
+}
+.hero-section {
+  display: flex;
+  flex-direction: column;
+}
+.text-container {
+  padding: 0% 10.4%;
+}
+.main-text-container {
+  margin: 5.6% 0;
+}
+.main-text {
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 133.02%;
+  text-align: center;
+}
+.secondary-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sec-text {
+  display: flex;
+  gap: 4rem;
+  padding: 2.32% 0;
+  width: max-content;
+  border-bottom: 1.2px solid var(--white);
+  margin-bottom: 4.64%;
+}
+
+@media only screen and (min-width: 480px) {
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    font-size: 1rem;
+  }
+  .icon {
+    display: none;
+  }
+  .nav-container {
+    flex-wrap: wrap;
+  }
+  .navigation-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.2rem;
+  }
+  .hero-section {
+    flex-direction: column-reverse;
+  }
+  .main-text-container {
+    margin-top: 4.2%;
+  }
+  .main-text {
+    text-align: left;
+  }
+  .text-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .main-text-container {
+    width: 51.3%;
+    /* margin-right: 20%; */
+  }
+  .secondary-text {
+    width: max-content;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .navigation-menu {
+    gap: 2.24rem;
+  }
+  .main-text-container {
+    width: 51.3%;
+  }
+  .secondary-text {
+    width: max-content;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .main-text {
+    font-size: 3.125rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  .navigation-menu {
+    gap: 2.8rem;
+  }
+}
