@@ -174,7 +174,177 @@ span {
 .our-room-gallery > div > div {
   width: 100%;
 }
+/* About us section */
+.about-us-container {
+  background-color: var(--black);
+  display: flex;
+  flex-direction: column;
+  padding: 30px 48px;
+}
+.about-us-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 32px;
+}
+.about-us-heading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.about-us-heading {
+  font-size: 45px;
+  line-height: 133.02%;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 16px;
+}
+.about-us-underline {
+  width: 174px;
+  height: 4px;
+  background-color: var(--orange);
+  border-radius: 3.5px;
+}
+.about-us-description {
+  margin: 40px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+.about-us-description > p {
+  color: #a9a9a9;
+  text-align: center;
+}
+.about-us-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 46px;
+  gap: 8px;
+  background-color: var(--orange);
+  width: max-content;
+  border-radius: 27px;
+  line-height: 162.52%;
+}
 
+.overlapping-section-container {
+  display: flex;
+  padding: 0px 48px;
+  margin-bottom: 60px;
+  flex-direction: column;
+}
+.overlapping-section-container {
+  display: flex;
+  gap: 48px;
+}
+.overlapping-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  padding-top: 32px;
+}
+.reviews {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.reviews-heading {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 133%;
+  color: var(--text-black);
+}
+.reviews-stars {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  width: 62%;
+}
+.stars {
+  width: 133px;
+}
+.reviews-text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 162.52%;
+  color: #7f7f7f;
+}
+.people-images {
+  width: 75%;
+}
+.text2 {
+  opacity: 0.6;
+}
+.people-images {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+}
+.images > img {
+  width: 57px;
+  height: 57px;
+  /* border: 2.5px solid #ffffff; */
+}
+.overlapping-image {
+  margin-left: -24px;
+}
+.cards-1-2,
+.cards-3-4 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  gap: 24px;
+}
+.overlapped-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 41px 24px;
+  background: #ffffff;
+  width: 341px;
+}
+.card1 {
+  box-shadow: -14px 24px 68px -16px rgba(0, 0, 0, 0.12);
+}
+.card-head {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 120.02%;
+  color: var(--text-black);
+  margin-bottom: 14px;
+  text-align: center;
+}
+.card-sub-head {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 162.52%;
+  color: #a9a9a9;
+  text-align: center;
+}
+.overlapped-card > img {
+  width: 56px;
+  height: 56px;
+  margin-bottom: 16px;
+}
+.overlapping-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
 /* Footer Section */
 footer {
   padding: 24px 48px;
@@ -387,6 +557,26 @@ input[type="email"] {
     margin-top: 64px;
     margin-bottom: 120px;
   }
+  .about-us-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+  }
+  .about-us-content {
+    padding-left: 48px;
+    width: 34%;
+    align-items: normal;
+  }
+  .about-us-description > p {
+    text-align: left;
+  }
+  .about-us-heading-container {
+    align-items: normal;
+  }
+  .overlapping-content {
+    width: unset;
+  }
 }
 @media only screen and (min-width: 1200px) {
   .main-text {
@@ -423,5 +613,119 @@ input[type="email"] {
   }
   .our-room-headings {
     width: 41%;
+  }
+  .about-us-content {
+    padding-left: 150px;
+  }
+  .overlapping-section-container {
+    display: flex;
+    flex-direction: row;
+    padding: 0px 150px;
+    margin-top: -62px;
+    margin-bottom: 120px;
+  }
+  .overlapping-section-container {
+    display: flex;
+    flex-direction: row;
+    gap: 79px;
+  }
+  .overlapping-content {
+    width: unset;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 64px;
+    padding-top: 182px;
+  }
+  .reviews {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  .reviews-heading {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 133%;
+    color: var(--text-black);
+  }
+  .reviews-stars {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    width: 62%;
+  }
+  .stars {
+    width: 133px;
+  }
+  .reviews-text {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 162.52%;
+    color: #7f7f7f;
+  }
+  .people-images {
+    width: 68%;
+  }
+  .text2 {
+    opacity: 0.6;
+  }
+  .people-images {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+  }
+  .images > img {
+    width: 57px;
+    height: 57px;
+    /* border: 2.5px solid #ffffff; */
+  }
+  .overlapping-image {
+    margin-left: -24px;
+  }
+  .cards-1-2,
+  .cards-3-4 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 32px;
+  }
+  .overlapped-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 41px 24px;
+    background: #ffffff;
+    width: 341px;
+  }
+  .card1 {
+    box-shadow: -14px 24px 68px -16px rgba(0, 0, 0, 0.12);
+  }
+  .card-head {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 120.02%;
+    color: var(--text-black);
+    margin-bottom: 14px;
+  }
+  .card-sub-head {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 162.52%;
+    color: #a9a9a9;
+  }
+  .overlapped-card > img {
+    width: 56px;
+    height: 56px;
+    margin-bottom: 16px;
+  }
+  .overlapping-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
   }
 }
